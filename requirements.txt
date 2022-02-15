@@ -12,7 +12,7 @@ django-tinymce4-lite
 html5lib
 idna==2.8
 ipaddr==2.2.0
-jsmin==2.2.2
+jsmin
 lockfile==0.12.2
 msgpack==0.6.2
 packaging==20.3

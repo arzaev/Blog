@@ -1,0 +1,66 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Feb 15 18:00:36 2022] ***
+compiled with version: 9.3.0 on 15 February 2022 14:36:28
+os: Linux-5.4.0-99-generic #112-Ubuntu SMP Thu Feb 3 13:50:55 UTC 2022
+nodename: 80-78-244-112.cloudvps.regruhosting.ru
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/Projects/Blog/Blog
+detected binary path: /home/Projects/Blog/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/Projects/Blog/Blog/
+your processes number limit is 3844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/Projects/Blog/Blog/arzaev.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.12 (default, Jan 15 2022, 18:42:10)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/Projects/Blog/venv
+Set PythonHome to /home/Projects/Blog/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56217772ae10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56217772ae10 pid: 5650 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5650)
+spawned uWSGI worker 1 (pid: 5651, cores: 1)
+spawned uWSGI worker 2 (pid: 5652, cores: 1)
+spawned uWSGI worker 3 (pid: 5653, cores: 1)
+spawned uWSGI worker 4 (pid: 5654, cores: 1)
+spawned uWSGI worker 5 (pid: 5655, cores: 1)
+spawned uWSGI worker 6 (pid: 5656, cores: 1)
+spawned uWSGI worker 7 (pid: 5657, cores: 1)
+spawned uWSGI worker 8 (pid: 5658, cores: 1)
+spawned uWSGI worker 9 (pid: 5659, cores: 1)
+spawned uWSGI worker 10 (pid: 5660, cores: 1)
+/home/Projects/Blog/venv/lib/python3.7/site-packages/django/views/generic/list.py:88: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'app.models.Article'> QuerySet.
+  allow_empty_first_page=allow_empty_first_page, **kwargs)
+[pid: 5658|app: 0|req: 1/1] 95.55.196.171 () {44 vars in 843 bytes} [Tue Feb 15 15:00:42 2022] GET / => generated 3845 bytes in 61 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+/home/Projects/Blog/venv/lib/python3.7/site-packages/django/views/generic/list.py:88: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'app.models.Article'> QuerySet.
+  allow_empty_first_page=allow_empty_first_page, **kwargs)
+[pid: 5659|app: 0|req: 1/2] 95.55.196.171 () {44 vars in 843 bytes} [Tue Feb 15 15:01:14 2022] GET / => generated 3845 bytes in 69 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+/home/Projects/Blog/venv/lib/python3.7/site-packages/django/views/generic/list.py:88: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'app.models.Article'> QuerySet.
+  allow_empty_first_page=allow_empty_first_page, **kwargs)
+[pid: 5660|app: 0|req: 1/3] 95.55.196.171 () {44 vars in 843 bytes} [Tue Feb 15 15:01:16 2022] GET / => generated 3845 bytes in 66 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 5659|app: 0|req: 2/4] 95.55.196.171 () {44 vars in 843 bytes} [Tue Feb 15 15:01:16 2022] GET / => generated 3845 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 5660|app: 0|req: 2/5] 95.55.196.171 () {44 vars in 843 bytes} [Tue Feb 15 15:01:17 2022] GET / => generated 3845 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 5659|app: 0|req: 3/6] 95.55.196.171 () {44 vars in 843 bytes} [Tue Feb 15 15:01:18 2022] GET / => generated 3845 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[2022-02-15 15:01:18,572] log: WARNING - Not Found: /robots.txt
+[pid: 5660|app: 0|req: 3/7] 95.55.196.171 () {40 vars in 665 bytes} [Tue Feb 15 15:01:18 2022] GET /robots.txt => generated 3015 bytes in 13 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 5659|app: 0|req: 4/8] 95.55.196.171 () {44 vars in 843 bytes} [Tue Feb 15 15:01:24 2022] GET / => generated 3845 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /admin
+[2022-02-15 15:01:47,349] log: WARNING - Not Found: /admin
+[pid: 5660|app: 0|req: 4/9] 95.55.196.171 () {42 vars in 822 bytes} [Tue Feb 15 15:01:47 2022] GET /admin => generated 2995 bytes in 10 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
