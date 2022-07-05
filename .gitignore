@@ -16,6 +16,8 @@ __pypackages__/
 .idea
 Blog/app/migrations/*
 
+uwsgi-emperor.log
+
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
