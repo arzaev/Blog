@@ -33,7 +33,7 @@ class Article(models.Model):
 
 
 class Image(models.Model):
-    name = models.CharField(max_length=255, unique=True, default=datetime.now())
+    name = models.CharField(max_length=255, default='image')
     image = models.ImageField(upload_to='')
 
     def __str__(self):
