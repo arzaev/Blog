@@ -17,6 +17,9 @@ __pypackages__/
 Blog/app/migrations/*
 
 uwsgi-emperor.log
+arzaev_uwsgi.ini
+uwsgi_params
+media/*
 
 # Celery stuff
 celerybeat-schedule
