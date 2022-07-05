@@ -23,10 +23,10 @@ class ArticleListView(ListView):
 
 class ArticleListCategoryView(ListView):
     template_name = "main.html"
-    paginate_by = 9
+#    paginate_by = 9
 
     def get_queryset(self):
-        return Article.objects.filter(article_category=self.kwargs['category_id'])
+        return Article.objects.filter(article_slug=self.kwargs['slug'])
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -37,3 +37,6 @@ class ArticleListCategoryView(ListView):
 class ArticleDetailView(DetailView):
     model = Article
     template_name = "article.html"
+    slug_field = 'article_slug'
+
+

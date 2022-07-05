@@ -14,7 +14,7 @@
 			<ul class="menu"> 
 {% for category in categories %}
 <li>
-<a href="/category/{{category.id}}" class="link-secondary" title="Home page">{{category.category_name}}</a>
+<a href="/category/{{category.category_slug}}" class="link-secondary" title="Home page">{{category.category_name}}</a>
 </li>
 {% endfor %}
 </ul>
@@ -27,7 +27,7 @@
   <ul class="box-article">
 	{% for article in article_list %}
     <li class="list-article wow flipInY">
-      <article class="box-article"><a href="/{{article.id}}/">
+      <article class="box-article"><a href="/{{article.article_slug}}/">
           <h1>{{article.article_title}}</h1>
           <figure><img src="{{article.article_header_image_url}}" alt=""/></figure>
           <p>{{article.article_description}}</p></a></article>
